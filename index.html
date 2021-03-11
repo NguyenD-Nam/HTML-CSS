@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .card {
+    	max-width: 300px;
+    	border-radius: 7px;
+    	text-align: center;
+    	margin: auto;
+    	padding: 10px;
+    	/*display: ;*/
+    	box-shadow: 0 0 35px rgba(0,0,0,0.5);
+    	margin-top: 20vh;
+    	background-color: #fff;
+    	background-image: url(images/bg-pattern-card.svg);
+    	background-size: 100% 35%;
+    	background-repeat: no-repeat;
+    	text-align: center;
+    }
+    .full{
+    	background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    	background-repeat: no-repeat;
+    	height: 100%;
+    	width: 100%;
+    	position: fixed;
+    }
+    body{
+    	background-color: #00b3b3;
+    	align-items: center;
+    	justify-content: center;
+    	font-family: "Roboto", Helvetica, Arial, sans-serif;
+    }
+    .even-column{
+    	display: flex;
+    }
+    .even-column>*{
+    	flex-basis: 100%;
+    }
+  </style>
+</head>
+<body>
+	<div class="full">
+		<div class="card" style="opacity: 1;line-height: 23px;">
+			<img src="images\image-victor.jpg" style="border-radius: 50%;border: 4px solid white;margin-top: 18%;"><br>
+				  <strong>Victor Crest</strong> 26<br>
+				  London<br><br>
+				  <hr>
+				  <div class="even-column" style="justify-content: center;text-align: center;">
+				  	<div></div>
+					<div>
+						  <strong>80K</strong>
+						  Followers
+					</div>
+					<div></div>
+					<div>
+						  <strong>803K</strong>
+						  Likes
+					</div>
+					<div></div>
+					<div>
+						  <strong>1.4K</strong>
+						  Photos
+					</div>
+					<div></div>
+				  </div>
+ 		</div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </div>
+</body>
+</html>
