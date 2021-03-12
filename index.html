@@ -25,20 +25,22 @@
     	background-image: url(images/bg-pattern-card.svg);
     	background-size: 100% 35%;
     	background-repeat: no-repeat;
-    	text-align: center;
-    }
-    .full{
-    	background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
-    	background-repeat: no-repeat;
-    	height: 100%;
-    	width: 100%;
-    	position: fixed;
     }
     body{
     	background-color: #00b3b3;
+      display: flex;
     	align-items: center;
     	justify-content: center;
     	font-family: "Roboto", Helvetica, Arial, sans-serif;
+      background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: 
+        bottom 40vh right 80vh,
+        top 50vh left 70vh; 
+    }
+    hr{
+      color: grey;
+      opacity: 0.8;
     }
     .even-column{
     	display: flex;
@@ -49,7 +51,7 @@
   </style>
 </head>
 <body>
-	<div class="full">
+	<div>
 		<div class="card" style="opacity: 1;line-height: 23px;">
 			<img src="images\image-victor.jpg" style="border-radius: 50%;border: 4px solid white;margin-top: 18%;"><br>
 				  <strong>Victor Crest</strong> 26<br>
